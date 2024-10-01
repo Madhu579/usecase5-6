@@ -1,0 +1,74 @@
+/* CSS Variables for Theming */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --hover-color: #2980b9;
+    --card-bg: #ecf0f1;
+  }
+  
+  /* General Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--card-bg);
+  }
+  
+  /* Header and Navigation Bar Styling */
+  header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+  }
+  
+  /* Responsive Grid Layout for Blog Posts */
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .post {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Hover Effects for Buttons */
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
